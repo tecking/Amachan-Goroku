@@ -1,11 +1,11 @@
 <?php
 /**
  * @package Amachan_Goroku
- * @version 0.1
+ * @version 0.2
  */
 /*
 Plugin Name: あまちゃん語録
-Version: 0.1
+Version: 0.2
 Description: NHK連続テレビ小説『あまちゃん』の主人公・天野秋ちゃんのセリフをダッシュボードに表示するだけのプラグインです。セリフのリストを非公式bot（https://twitter.com/amachan_aki）より取得しているので、Twitterのアプリケーション登録（https://dev.twitter.com/apps）と、プラグイン『oAuth Twitter Feed for Developers』（http://wordpress.org/plugins/oauth-twitter-feed-for-developers/）のインストールが必要です。
 Author: Tecking
 Author URI: http://www.tecking.org/
@@ -52,6 +52,7 @@ function hello_amachan_function() {
 	$tweets = getTweets( 20, 'amachan_aki' );
 	$tweet  = $tweets[ mt_rand( 0, count( $tweets ) - 1 ) ];
 	echo wp_oembed_get( 'https://twitter.com/amachan_aki/status/' . $tweet['id_str'] );
+	echo '<style>#hello_amachan .twitter-tweet { display: none; }</style>';
 }
 
 
