@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: あまちゃん語録
-Version: 0.2
+Version: 0.2.1
 Description: NHK連続テレビ小説『あまちゃん』の主人公・天野アキちゃんのセリフをダッシュボードに表示するだけのプラグインです。セリフのリストを非公式bot（https://twitter.com/amachan_aki）より取得しているので、Twitterのアプリケーション登録（https://dev.twitter.com/apps）と、プラグイン『oAuth Twitter Feed for Developers』（http://wordpress.org/plugins/oauth-twitter-feed-for-developers/）のインストールが必要です。
 Author: Tecking
 Author URI: http://www.tecking.org/
